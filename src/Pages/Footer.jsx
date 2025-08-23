@@ -6,7 +6,6 @@ function Footer() {
         <footer className="bg-[#1e1b29] text-gray-400 py-12 mt-20 relative z-20">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
                 
-     
                 <div>
                     <h2 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">
                         Jeeten.dev
@@ -32,15 +31,14 @@ function Footer() {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="mailto:jeeten84@gmail.com"
+                            href="mailto:jeetenpanchal84@gmail.com"
                             className="hover:text-pink-400 hover:scale-110 transition-transform duration-300"
                         >
                             <FaEnvelope />
                         </a>
                     </div>
                 </div>
-
-              
+     
                 <div>
                     <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
                     <ul className="space-y-2 text-sm">
