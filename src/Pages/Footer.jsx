@@ -74,8 +74,8 @@ function Footer() {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-2 justify-center md:justify-start">
                             <FaEnvelope className="text-pink-400" />
-                            <a href="mailto:jeeten84@gmail.com" className="hover:text-pink-400 transition duration-300">
-                                jeeten84@gmail.com
+                            <a href="mailto:jeetenpanchal84@gmail.com" className="hover:text-pink-400 transition duration-300">
+                                jeetenpanchal84@gmail.com
                             </a>
                         </li>
                         <li className="flex items-center gap-2 justify-center md:justify-start">
