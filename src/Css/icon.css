@@ -1,0 +1,72 @@
+.floating-icons {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    /* Keep behind content */
+}
+
+.floating-icons .icon {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.15;
+    animation: float 10s infinite ease-in-out;
+}
+
+/* Different positions */
+.react {
+    top: 15%;
+    left:1%;
+    color: #61dafb;
+    animation-delay: 0s;
+}
+
+.tailwind {
+    top: 20%;
+    right: 10%;
+    color: #38bdf8;
+    animation-delay: 2s;
+}
+
+.js {
+    top: 50%;
+    left: 50%;
+    color: #f7df1e;
+    animation-delay: 4s;
+}
+
+.mdb {
+    top: 60%;
+    left: 80%;
+    color: #4db33d;
+    animation-delay: 6s;
+}
+
+.css {
+    bottom: 0%;
+    left: 25%;
+    color: #2965f1;
+    animation-delay: 8s;
+}
+
+.html {
+    top: 85%;
+    left: 60%;
+    color: #e34c26;
+    animation-delay: 10s;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
