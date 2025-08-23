@@ -8,7 +8,7 @@ function Contact() {
     const [form, setform] = useState({
         name: "",
         email: "",
-        testarea: ""
+        textarea: ""
     })
     const formRef = useRef();
     const [msg, setmsg] = useState(false);
@@ -29,7 +29,7 @@ function Contact() {
         } else if (form.email === "") {
             seterr("Mail is Required");
             return;
-        } else if (form.testarea === "") {
+        } else if (form.textarea === "") {
             seterr("Explain me about yourself");
             return;
         } else {
@@ -45,7 +45,7 @@ function Contact() {
                     setmsg(true);
                     console.log(res);
                     formRef.current.reset(); // 
-                    setform({ name: "", email: "", testarea: "" });
+                    setform({ name: "", email: "", textarea: "" });
                 })
                 .catch((err) => {
                     console.log(err);
@@ -135,9 +135,9 @@ function Contact() {
                             </label>
                             <textarea
                                 rows="4"
-                                value={form.testarea}
+                                value={form.textarea}
                                 onChange={handchange}
-                                name="testarea"
+                                name="textarea"
                                 placeholder="Write your message..."
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-[#2a2438] text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition text-sm sm:text-base resize-none"
                             />
