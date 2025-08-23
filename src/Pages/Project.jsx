@@ -31,7 +31,7 @@ function Project() {
             title: "Portfolio Website",
             description:
                 "My personal portfolio showcasing projects, blogs, and contact info.",
-            link: "https://github.com/jitenpanchal1/portfolio",
+            link: "#home",
             image: Jdev,
         },
         {
