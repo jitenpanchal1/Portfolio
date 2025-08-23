@@ -133,14 +133,14 @@ function Contact() {
                             <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2 text-sm sm:text-base">
                                 Message
                             </label>
-                            <input
-                                type="text"
+                            <textarea
+                                rows="4"
                                 value={form.testarea}
                                 onChange={handchange}
                                 name="testarea"
                                 placeholder="Write your message..."
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-[#2a2438] text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition text-sm sm:text-base"
-                            ></input>
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-[#2a2438] text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition text-sm sm:text-base resize-none"
+                            />
                         </div>
                         <button
                             type="submit"
