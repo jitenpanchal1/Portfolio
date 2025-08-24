@@ -23,7 +23,7 @@ function Footer() {
                             <FaGithub />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/jiten-pachal-07a633226/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-purple-400 hover:scale-110 transition-transform duration-300"
