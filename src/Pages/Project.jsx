@@ -39,7 +39,7 @@ function Project() {
             title: "Worry free food",
             description:
                 "A responsive web design with bootstrap and can reserve the table.",
-            link: "https://hotelsite-git-main-jeetens-projects.vercel.app",
+            link: "https://jitenpanchal1.github.io/hotelsite/",
             image: Htl,
         },
         {
@@ -63,7 +63,7 @@ function Project() {
         <div id="projects" className="relative pt-20 px-6 sm:px-12 md:px-20 lg:px-32">
 
             <div className="flex flex-col items-center mb-10">
-                
+
                 <span
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -73,7 +73,7 @@ function Project() {
                 >
                     Featured Projects
                 </span>
-                 <div className="h-1 w-65 sm:w-80 md:w-100 bg-gradient-to-r from-emerald-400 via-purple-400 to-pink-500 rounded-full animate-glow mt-4 mb-0"></div>
+                <div className="h-1 w-65 sm:w-80 md:w-100 bg-gradient-to-r from-emerald-400 via-purple-400 to-pink-500 rounded-full animate-glow mt-4 mb-0"></div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -86,10 +86,10 @@ function Project() {
                                    transition-all duration-500 relative group
                                    hover:border-transparent hover:shadow-[0_0_20px_rgba(99,102,241,0.5)]"
                     >
-                        
+
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                     
+
                         <div className="flex items-center gap-4 p-4 border-b border-gray-800 relative z-10">
                             <img
                                 src={project.image}
