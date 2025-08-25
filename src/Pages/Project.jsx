@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "../Css/Project.css"
-import Pg from "../assets/PGfinder.png"
-import Htl from "../assets/Logo.png"
-import Blog from "../assets/Blog.png"
-import Cart from "../assets/Cart.png"
-import Jdev from "../assets/Jdev.png"
+import "../Css/Project.css";
+import Pg from "../assets/PGfinder.png";
+import Htl from "../assets/Logo.png";
+import Blog from "../assets/Blog.png";
+import Cart from "../assets/Cart.png";
+import Jdev from "../assets/Jdev.png";
 
 function Project() {
     useEffect(() => {
@@ -19,51 +19,48 @@ function Project() {
 
     const projects = [
         {
-            id: 1,
-            title: "PG Finder",
-            description:
-                "A modern online Pg finder with React, Redux Toolkit, and Tailwind CSS.",
-            link: "https://github.com/jitenpanchal1/Jeetenpanchal_Raksha-Stack",
-            image: Pg,
-        },
-        {
             id: 2,
             title: "Portfolio Website",
-            description:
-                "My personal portfolio showcasing projects, blogs, and contact info.",
-            link: "#home",
+            description: "My personal portfolio showcasing projects, blogs, and contact info.",
+            Livepreview: "#home",
+            Sourcecode: "https://github.com/jitenpanchal1/Portfolio",
             image: Jdev,
         },
         {
             id: 3,
             title: "Worry free food",
-            description:
-                "A responsive web design with bootstrap and can reserve the table.",
-            link: "https://jitenpanchal1.github.io/hotelsite/",
+            description: "A responsive web design with bootstrap and can reserve the table.",
+            Livepreview: "https://jitenpanchal1.github.io/hotelsite/",
+            Sourcecode: "https://github.com/jitenpanchal1/hotelsite",
             image: Htl,
         },
         {
             id: 4,
             title: "Blog App",
-            description:
-                "A blogging platform with rich text editor, image upload with fully connected with backend servece (Appwrite).",
-            link: "https://github.com/jitenpanchal1/react-work/tree/main/mega-project",
+            description: "A blogging platform with rich text editor, image upload with fully connected with backend service (Appwrite).",
+            Livepreview: "https://jitenpanchal1.github.io/BlogApp/",
+            Sourcecode: "https://github.com/jitenpanchal1/BlogApp",
             image: Blog,
+        },
+        {
+            id: 1,
+            title: "PG Finder",
+            description: "A modern online Pg finder with React, Redux Toolkit, and Tailwind CSS.",
+            Sourcecode: "https://github.com/jitenpanchal1/Jeetenpanchal_Raksha-Stack",
+            image: Pg,
         },
         {
             id: 5,
             title: "First Add to Cart Project",
             description: "A real-time chat app using WebSockets and React.",
-            link: "https://github.com/jitenpanchal1/react-work/tree/main/ReduxToolkit-Addtocart",
+            Sourcecode: "https://github.com/jitenpanchal1/react-work/tree/main/ReduxToolkit-Addtocart",
             image: Cart,
         },
     ];
 
     return (
         <div id="projects" className="relative pt-20 px-6 sm:px-12 md:px-20 lg:px-32">
-
             <div className="flex flex-col items-center mb-10">
-
                 <span
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -86,9 +83,7 @@ function Project() {
                                    transition-all duration-500 relative group
                                    hover:border-transparent hover:shadow-[0_0_20px_rgba(99,102,241,0.5)]"
                     >
-
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
 
                         <div className="flex items-center gap-4 p-4 border-b border-gray-800 relative z-10">
                             <img
@@ -107,15 +102,26 @@ function Project() {
                             </p>
 
                             <div className="flex gap-3 mt-auto">
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium shadow-md hover:from-blue-600 hover:to-purple-600 transition-all"
-                                >
-                                    View Code
-                                </a>
-
+                                {project.Livepreview && (
+                                    <a
+                                        href={project.Livepreview}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium shadow-md hover:from-blue-600 hover:to-purple-600 transition-all"
+                                    >
+                                        Live Preview
+                                    </a>
+                                )}
+                                {project.Sourcecode && (
+                                    <a
+                                        href={project.Sourcecode}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 text-white text-sm font-medium shadow-md hover:from-indigo-600 hover:to-cyan-600 transition-all"
+                                    >
+                                        View Code
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
