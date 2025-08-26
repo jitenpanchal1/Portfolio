@@ -63,7 +63,7 @@ function About() {
                                 Education
                             </h4>
                             <p className="text-gray-400 text-sm">
-                                Diploma in Computer Science (Govern mant polytechnique)
+                                Diploma in Computer Science (Government polytechnique)
                                 <br /> (2020 - 2023)
                             </p>
                         </div>
