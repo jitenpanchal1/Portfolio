@@ -8,7 +8,7 @@ function Footer() {
                 
                 <div>
                     <h2 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">
-                        Jeeten.dev
+                        Jeetens.dev
                     </h2>
                     <p className="mt-3 text-sm text-gray-400">
                         Front-End Developer Portfolio
@@ -74,8 +74,8 @@ function Footer() {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-2 justify-center md:justify-start">
                             <FaEnvelope className="text-pink-400" />
-                            <a href="mailto:jeetenpanchal84@gmail.com" className="hover:text-pink-400 transition duration-300">
-                                jeetenpanchal84@gmail.com
+                            <a href="mailto:jeetensdev@gmail.com" className="hover:text-pink-400 transition duration-300">
+                                jeetensdev@gmail.com
                             </a>
                         </li>
                         <li className="flex items-center gap-2 justify-center md:justify-start">
