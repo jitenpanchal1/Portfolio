@@ -7,6 +7,7 @@ import Htl from "../assets/Logo.png";
 import Blog from "../assets/Blog.png";
 import Cart from "../assets/Cart.png";
 import Jdev from "../assets/Jdev.png";
+import Nextjs from "../assets/Nextjs.webp";
 
 function Project() {
     useEffect(() => {
@@ -56,6 +57,14 @@ function Project() {
             Sourcecode: "https://github.com/jitenpanchal1/react-work/tree/main/ReduxToolkit-Addtocart",
             image: Cart,
         },
+        {
+            id: 6,
+            title: "Next.js project",
+            description: "here u can find all next js concept with examples",
+            Sourcecode: " https://github.com/jitenpanchal1/Nextjs",
+            image: Nextjs,
+
+        }
     ];
 
     return (
